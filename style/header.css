@@ -43,3 +43,55 @@
 .header__consultation:focus{
   outline-color: var(--second-color);
 }
+
+@media (max-width: 1440px) {
+  .header__consultation{
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 0.64px
+  }
+}
+
+@media (max-width: 1000px) {
+  .header{
+    padding: 20px 0;
+  }
+  .header__container{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .header__burger{
+    grid-row: 1;
+    grid-column: 1;
+    justify-self: start;
+    width: 28px;
+  }
+  .header__logo{
+    grid-row: 1;
+    grid-column: 2;
+    justify-self: center;
+  }
+  .header__consultation{
+    grid-row: 1;
+    grid-column: 3;
+    padding: 8px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    letter-spacing: 0.56px
+  }
+  .header__navigation{
+    grid-row: 2;
+    grid-column: 1/4;
+  }
+}
+@media (max-width: 580px) {
+  .header{
+    padding-top: 16px;
+    padding-bottom: 20px;
+  }
+  .header__consultation{
+    padding: 5px 14px;
+    font-size: 12px;
+    letter-spacing: 0.48px
+  }
+}
